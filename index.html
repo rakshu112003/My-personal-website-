@@ -1,139 +1,150 @@
-
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rakshitha H N - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakshitha HN | Portfolio</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
     body {
       background-color: #121212;
-      color: #f5f5f5;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      padding: 20px;
+      color: #f0f0f0;
     }
-    h1, h2 {
-      color: #00bcd4;
-      border-bottom: 1px solid #00bcd4;
-      padding-bottom: 5px;
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    a {
-      color: #82e9de;
+    nav a {
+      margin: 0 15px;
+      color: #f0f0f0;
       text-decoration: none;
     }
+    nav a:hover {
+      color: #00ffcc;
+    }
     section {
-      margin-bottom: 40px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    ul {
-      list-style-type: square;
-      margin-left: 20px;
+    h2 {
+      border-bottom: 2px solid #00ffcc;
+      display: inline-block;
+      margin-bottom: 20px;
     }
-    img {
-      display: block;
-      margin: 20px auto;
+    .profile {
+      text-align: center;
+    }
+    .profile img {
       border-radius: 50%;
-      border: 3px solid #00bcd4;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 3px solid #00ffcc;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #00ffcc;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #00cc99;
     }
   </style>
 </head>
 <body>
-  <section id="home">
-    <h1>👋 Rakshitha H N</h1>
-    <img src="https://i.postimg.cc/LYNB4fj1/profile.jpg" alt="Rakshitha HN Photo" width="200" height="200">
-    <p>Hi, I’m Rakshitha H N, a passionate Full Stack Developer dedicated to crafting efficient, scalable, and user-friendly web applications. I specialize in the MERN stack (MongoDB, Express.js, React.js, Node.js) and have experience with Python, SQL, and other backend technologies. With a strong eye for design, I build responsive interfaces using Tailwind CSS and Material-UI.</p>
-    <p>I love solving problems with clean code and enjoy continuously learning new skills in this fast-evolving tech world. I’m currently focused on building meaningful projects and improving my expertise to contribute effectively in the industry.</p>
-  </section>
-
-  <section id="skills">
+  <header>
+    <h1>Rakshitha HN</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <section id="home" class="profile">
+    <img src="https://i.postimg.cc/LYNB4fj1/profile.jpg" alt="Rakshitha HN">
+    <h2>Hi, I'm Rakshitha HN</h2>
+    <p>A passionate Full Stack Web Developer</p>
+  </section>  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a MCA graduate passionate about software development. I have experience in building full stack applications and enjoy solving real-world problems using technology. Currently looking for exciting job opportunities.</p>
+  </section>  <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> C, C++, Python, Java, SQL, JavaScript</li>
-      <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, Tailwind CSS, Material-UI</li>
-      <li><strong>Backend:</strong> Node.js, Express.js, Python, Django ORM</li>
-      <li><strong>Databases:</strong> MongoDB, SQL</li>
-      <li><strong>Tools:</strong> VS Code, Git, Jupyter Notebook</li>
-      <li><strong>Others:</strong> Problem Solving, API Development, Responsive Design</li>
-    </ul>
-  </section>
-
-  <section id="education">
+    <div class="grid grid-2">
+      <div>
+        <strong>Frontend:</strong>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React.js</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Backend & Tools:</strong>
+        <ul>
+          <li>Node.js, Express.js</li>
+          <li>MongoDB, MySQL</li>
+          <li>Git, GitHub, Postman</li>
+        </ul>
+      </div>
+    </div>
+  </section>  <section id="education">
     <h2>Education</h2>
     <ul>
-      <li><strong>MCA:</strong> Visvesvaraya Technical University, Chikkaballapura (Dec 2023 - Sep 2024) | CGPA: 7.9</li>
-      <li><strong>BCA:</strong> St. Joseph's College for Women, Mysore (Jun 2019 - Sep 2022) | CGPA: 7.5</li>
-      <li><strong>PUC (EBACS):</strong> St. Anne’s PU College (2017 - 2019)</li>
-      <li><strong>SSLC:</strong> Vivekananda High School (2017)</li>
+      <li><strong>MCA</strong> – JSS Science and Technology University (2023–2025)</li>
+      <li><strong>BSc</strong> – University of Mysore (2020–2023)</li>
+      <li><strong>PUC</strong> – Govt PU College Bannur</li>
     </ul>
-  </section>
-
-  <section id="experience">
+  </section>  <section id="experience">
     <h2>Experience</h2>
-    <ul>
-      <li><strong>Intern (Front End Developer)</strong> - Ideonix Solutions, Mysore (Nov 2023 – Dec 2023)
-        <ul>
-          <li>Developed responsive web interfaces with 98% IEEE standards compliance</li>
-          <li>Collaborated on network solutions, improving connectivity by 20%</li>
-          <li>Debugged real-time systems to increase efficiency by 15%</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-
-  <section id="projects">
+    <p><strong>Web Development Intern</strong> – Ideonix Solutions, Mysore (Full Stack Developer) – 1 Month</p>
+    <p>Worked on a Room Booking App and gained hands-on experience in MERN stack development.</p>
+  </section>  <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Student Profile Identification System</strong> (Jun 2024 - Sep 2024)  
-        <ul>
-          <li>Technologies: HTML, CSS, JavaScript, Python, Django ORM</li>
-          <li>Built AI-powered system to analyze student performance with explainable AI insights</li>
-          <li>Enhanced personalized learning through clear evaluation models</li>
-        </ul>
-      </li>
-      <li><strong>Intelligent Traffic Monitoring System</strong> (May 2022 - Sep 2022)  
-        <ul>
-          <li>Technologies: TensorFlow, Flask, JavaScript, HTML, CSS</li>
-          <li>Designed vehicle detection system with 95% accuracy for traffic management</li>
-          <li>Managed over 10,000 real-time data points daily</li>
-        </ul>
-      </li>
-      <li><strong>Flight Ticket Price Prediction</strong>  
-        <ul>
-          <li>Technologies: Python, Machine Learning</li>
-          <li>Developed regression model for predicting flight prices using historical data</li>
-        </ul>
-      </li>
-      <li><strong>Library Management System</strong>  
-        <ul>
-          <li>Technologies: Python, Java, SQL</li>
-          <li>Automated library operations like book borrowing, returning, and inventory tracking</li>
-        </ul>
-      </li>
-      <li><strong>RoomEase - Room Booking App</strong>  
-        <ul>
-          <li>Technologies: MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
-          <li>Created full stack room booking system with user authentication and CRUD features</li>
-        </ul>
-      </li>
+      <li>RoomEase – Room Booking App</li>
+      <li>Job Tracker – Full Stack MERN Project</li>
+      <li>DailyBoost – Daily Motivation App</li>
+      <li>Quiz App, To-do List, Expense Tracker</li>
     </ul>
-  </section>
-
-  <section id="certifications">
+  </section>  <section id="certifications">
     <h2>Certifications</h2>
     <ul>
-      <li>Privacy and Security on Social Media – NPTEL</li>
-      <li>React Interview Certification – CodeChef</li>
-      <li>Advanced React Development – CodeChef</li>
+      <li>IBM SkillsBuild – Web Development Track</li>
+      <li>CodeChef Certificates (12+)</li>
+      <li>NPTEL – Programming in C</li>
     </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:rakshithahn123@gmail.com">rakshithahn123@gmail.com</a></li>
-      <li><strong>Phone:</strong> 7411275251</li>
-      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rakshitha-hn-a14124327/" target="_blank">View Profile</a></li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/rakshu112003" target="_blank">rakshu112003</a></li>
-    </ul>
-  </section>
-</body>
-</html>
+  </section>  <section id="resume">
+    <h2>Resume</h2>
+    <a href="https://drive.google.com/file/d/1TEbfB7iiy5aIR2gtIRb3GpTWw
